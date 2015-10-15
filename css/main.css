@@ -30,8 +30,8 @@ img {
 }
 
 .mconf-ico {
-  width: 110px;
-  height: 110px;
+  width: 200px;
+  height: 200px;
 }
 
 .mconf-full-logo {
@@ -39,9 +39,19 @@ img {
   height: 155px;
 }
 
+#logo-video {
+  margin: 0 auto 100px auto;
+  width: 640px;
+  height: 480px;
+  border: 1px solid #ddd;
+}
+#logo-video img {
+  margin: 140px 220px;
+}
+
 #mconf-logo1, #mconf-logo2, #mconf-logo3 {
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 5s;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
