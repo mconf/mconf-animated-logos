@@ -39,8 +39,8 @@ $(function() {
     });
     $("#mconf-logo1").on(animationEndEvent, function() {
         var $logo = $("#mconf-logo1");
-        $logo.removeClass("rubberBand");
-        setTimeout(function() { $logo.addClass("rubberBand"); }, 50);
+        $logo.removeClass("pulse");
+        setTimeout(function() { $logo.addClass("pulse"); }, 50);
     });
     $("#mconf-logo2").on(animationEndEvent, function() {
         var $logo = $("#mconf-logo2");
