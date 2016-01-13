@@ -9,6 +9,14 @@
 #   Example:
 #       ./generategif.sh video.mp4 out-video.gif
 #
+#FFmpeg docs about setpts (set timestamp of the current frame):
+# Apply fast motion effect:
+#   setpts=0.5*PTS
+# Apply slow motion effect:
+#   setpts=2.0*PTS
+#
+#See ffmpeg docs for more info
+
 
 # temporary file for pallete
 palette="/tmp/palette.png"
