@@ -1,9 +1,23 @@
+/*
+ * To customize to other logos, usually these are the attributes
+ * that need to be changed.
+ */
+body {
+  background: #27535C;
+}
+#logo-video img {
+  margin: 140px 220px;
+  width: 200px;
+  height: 200px;
+}
+
+
+
 body {
   padding: 100px;
   color: #eee;
   font-size: 1em;
   line-height: 1.4;
-  background: #27535C;
 }
 
 table {
@@ -45,9 +59,6 @@ img {
   height: 480px;
   border: 1px solid #ddd;
   padding: 10px;
-}
-#logo-video img {
-  margin: 140px 220px;
 }
 
 #mconf-logo1, #mconf-logo2, #mconf-logo3 {
