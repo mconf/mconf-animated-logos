@@ -15,8 +15,10 @@ palette="/tmp/palette.png"
 
 # feel free to add any other filter (i added trim filter)
 # reduce 'setpts' to increase speed
-filters="trim=start_frame=50,fps=60,setpts=0.65*PTS"
-# filters="trim=start_frame=50:end_frame=380,fps=60,setpts=0.65*PTS"
+# the gif might be displayed at 15fps only in the webconf, so it should look a lot
+# faster when opened as a gif
+filters="trim=start_frame=50,fps=60,setpts=0.25*PTS"
+# filters="trim=start_frame=50:end_frame=380,fps=60,setpts=0.25*PTS"
 
 ffmpeg -v warning -i $1 -vf "$filters,palettegen" -y $palette
 ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y $2
